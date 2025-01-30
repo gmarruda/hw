@@ -25,7 +25,7 @@ steps:
   inputs:
     contents: '**'
     targetFolder: '$(build.artifactStagingDirectory)'
-    flattenFolders: true
+    flattenFolders: false
 
 - task: PublishBuildArtifacts@1
   inputs:
