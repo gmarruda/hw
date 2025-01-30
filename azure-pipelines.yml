@@ -12,12 +12,10 @@ pool:
 steps:
 - task: UsePythonVersion@0
   inputs:
-    versionSpec: '3.x'
+    versionSpec: '3.13'
     addToPath: true
 
 - script: |
-    set -e
-    echo "Starting script..."
     python -m venv venv
     source venv/bin/activate
     pip install -r requirements.txt
